@@ -1,3 +1,4 @@
+/*  GENERAL STYLING */
 * {
   box-sizing: border-box;
 }
@@ -5,7 +6,39 @@
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #c1b5ad;
+  background-color: pink;
+}
+
+/* HEADER STYLING */
+nav {
+  height: 5vh;
+}
+
+/* CONTENT STYLING  */
+.content-container {
+  position: relative;
+}
+
+.locations {
+  background: lightblue;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.itinerary {
+  background: lavender;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.selector-name {
+  color: blue;
 }
 
 #map {
