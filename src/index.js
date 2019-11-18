@@ -1,4 +1,6 @@
+
 const mapboxgl = require("mapbox-gl");
+const makeMarker = require("./marker");
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoibWlrYWJ1c2FudGUiLCJhIjoiY2szNG9janU5MTdrOTNocHBkc243Y2NkbyJ9.t4BlWGiD0pdV-PimxORHew";
@@ -10,9 +12,6 @@ const map = new mapboxgl.Map({
   style: "mapbox://styles/mapbox/streets-v10" // mapbox has lots of different map styles available.
 });
 
-const marker = document.createElement("div");
-marker.style.width = "32px";
-marker.style.height = "32px";
-marker.style.backgroundImage =
-  "url(https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg)";
-new mapboxgl.Marker(marker).setLngLat([-74.009151, 40.705086]).addTo(map);
+//const activityMarker = makeMarker('http:/i.imgur.com/WbMOfMl.').addTo(map);
+const hotelMarker = makeMarker('http://i.imgur.com/D9574Cu.png').addTo(map);
+//const restoMarker = makeMarker('http://i.imgur.com/cqR6pUI.png').addTo(map);
